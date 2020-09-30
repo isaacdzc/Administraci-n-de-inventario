@@ -1,0 +1,1 @@
+# Repositorio de administración de inventario
