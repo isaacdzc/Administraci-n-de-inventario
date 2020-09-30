@@ -6,7 +6,7 @@ function obtenerDatos() {
     let email = document.getElementById("vendors_email").value;
     let category = document.getElementById("vendors_category").value;
     let vendor = {name, address, phone, email, category};
-    return tarea;
+    return vendors;
   }
   
   function newVendor() {
