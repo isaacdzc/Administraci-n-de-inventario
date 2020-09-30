@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,500,700');
+
+/* Global */
+
+* {
+    box-sizing: border-box;
+}
+
+/*Diseño de fuente y letra*/ 
+body {
+    color: #090b08;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    background-color: rgb(245, 237, 229);
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1.5em;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 1em;
+}
+
+.linea {
+    width: 3em;
+    height: 1px;
+    background-color: #000;
+    margin-right: 1em;
+}
+
+
+/* Encabezado */
+
+/*Tamaño del encabezado*/
+header {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+/*Diseño del encabezado*/
+
+header:before {
+    content: "";
+    position: absolute;
+    background-color: #C2222A;
+    width: 100%;
+    height: 35%;
+    /*esto muestra el contenido del encabezado*/
+    z-index: -1;
+    /*Degradado inferior*/
+    -webkit-box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.22);
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.22);
+}
+
+.logo img {
+    width: auto;
+    padding-top: 1em;
+    height: 10em;
+
+}
+
+.udem img{
+
+    margin-left: 5em;
+}
+
+
+
+/*Orden de la lista(panel)*/
+
+.panel {
+    display: flex;
+}
+
+a.link {
+    margin-right: 10em;
+}
+
+/*Al pasar el mouse se ve subrayado*/
+a.link:hover,
+a.link:active,
+a.link:focus {
+    border-bottom: solid 1.8px whitesmoke;
+}
+
+.contenedor {
+    display: flex;
+    border-radius: 5%;
+    margin-left: 150px;
+    margin-right: 150px;
+    box-sizing: border-box;
+    align-content: center;
+}
+
+.panel li {
+    margin-top: 0.5em;
+    align-content: center;    
+}
+
+.title.title-left {
+    margin-left: -2.5em;
+    margin-top: 5em;
+}
+
+section {
+    padding: 5.8em 11em 0;
+}
+
+/*----------------------------------------------------------------------------*/
+
+
+/* promCode Section */
+
+/*Editar tamaño de la imagen*/
+
+
+
+#promCode .image img {
+    width: 35em;
+    height: auto;
+    border: 3px solid #FFF;
+}
+
+#promCode .text {
+    flex: 1;
+    order: 1;
+}
+#promCode .image {
+    flex: 1 0 12em;
+    order: 2;
+    margin-top: 2em;
+    margin-left: 15em;
+}   
+
+/*Diseño de texto del parrafo */
+
+.text {
+    text-align: center;
+    
+}
+
+.text p {
+    text-align: center;
+    /*aqui sirve para entre espacios en parrafos*/
+    padding-bottom: 2em;
+    line-height: 1.4em;
+    font-size: 1.5em;
+}
+
+
+/*formulario*/
+
+
+.contenedorForm:after {
+    display: flex;
+    content: "";
+    margin: 1em auto;
+    border-bottom-width: thick;
+    border-radius: 5%;
+    margin: auto;
+    box-sizing: border-box;
+    align-content: center;
+}
+
+
+
+.submit:hover {
+    background-color: #18a5b8;
+    color: #fff;
+    transition: all .25s ease;
+}
+
+
+.submit {
+    margin-top: 2em;
+    margin-left: 16em;
+    width: 20em;
+    align-content: center;
+}
+
+
+
+input {
+    padding: 1em;
+    border: 1px solid #000;
+    margin-top: 0.5em;
+    float: left;
+    margin-left: 8em;
+    width: calc(50% - 200px);
+}
+
+select{
+    padding: 1em;
+    border: 1px solid #000;
+    margin-top: 0.5em;
+    float: left;
+    margin-left: 8em;
+    width: calc(50% - 200px);
+}
+ 
+label {
+    margin-top: 0.5em;
+    float: left;
+    width: 200px;
+    margin-left: 10em;
+    padding-right: 24px;
+}
+ 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+    align-content: center;    
+}
+    
+    /* Alineacion de la lista */
+li {
+float: center;
+}
+
+/* Texto de la lista */
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 16px;
+text-decoration: none;
+align-content: center;    
+}
+
+table {
+font-size: 12px;
+font-weight:bold;
+background-color: #fdfdf1;
+background-image: url(fondo_tr02.png);
+background-repeat: repeat-x;
+color: #178ec5;
+font-family: “Trebuchet MS”, Arial;
+text-align:left;
+}
+table td {
+padding: 5px;
+border-right-width: 1px;
+border-bottom-width: 1px;
+border-right-style: solid;
+border-bottom-style: solid;
+border-right-color: #EBE9BC;
+border-bottom-color: #EBE9BC;
+}
+table th {
+background-image: url(fondo_tr02a.png);
+background-position: left top;
+font-size: 12px;
+font-weight:bold;
+background-color: #fdfdf1;
+background-repeat: repeat-x;
+color: #178ec5;
+font-family: “Trebuchet MS”, Arial;
+text-align:left;
+border-right-width: 1px;
+border-bottom-width: 1px;
+border-right-style: solid;
+border-bottom-style: solid;
+border-right-color: #EBE9BC;
+border-bottom-color: #EBE9BC;
+}
+
